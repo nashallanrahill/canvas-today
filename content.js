@@ -1,5 +1,4 @@
 // HELPERS
-// TODO: only look in certain container/element?
 function textInElement(element, text) {
   found = element.textContent.includes(text)
   return found;
@@ -17,8 +16,7 @@ function formatDate(date) {
   return datestr
 }
 
-
-// TODO: before executing need to make sure this is a canvas link & contains dates
+// MAIN
 const url = new URL('', window.location.href);
 // console.log(url.pathname);
 // TODO: change this to work for any canvas page?
